@@ -135,3 +135,11 @@ def main():
 
         # Display the video feed (optional)
         cv2.imshow('Video Feed')
+      if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    cap.release()
+    cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
